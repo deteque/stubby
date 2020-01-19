@@ -25,7 +25,7 @@ RUN	/usr/bin/git clone https://github.com/getdnsapi/stubby.git
 WORKDIR /root/stubby
 RUN	cmake . \
 	&& make \
-	&& mv stubby /usr/sbin/ \
+	&& mv stubby /usr/bin/ \
 	&& mv stubby.yml.example /etc/stubby
 
 COPY stubby.yml /etc/stubby
@@ -34,4 +34,4 @@ COPY start-docker-stubby.sh /root/scripts/
 EXPOSE 53/udp
 EXPOSE 53/tcp
 
-CMD [ "/usr/bin/stubby","-C","/etc/stubby/stubby.yml" ]
+CMD [ "/usr/sbin/stubby","-C","/etc/stubby/stubby.yml" ]
