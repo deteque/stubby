@@ -1,6 +1,6 @@
 FROM debian:buster-slim
 LABEL maintainer="Andrew Fried <afried@deteque.com>"
-ENV STUBBY_VERSION 1.5.1-1
+ENV STUBBY_VERSION 0.2.5
 
 RUN mkdir /etc/stubby \
 	&& apt-get clean \
