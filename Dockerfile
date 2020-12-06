@@ -1,7 +1,7 @@
 FROM debian:buster-slim
 LABEL maintainer="Andrew Fried <afried@deteque.com>"
+LABEL build_date="2020-12-06"
 ENV STUBBY_VERSION 0.2.5
-ENV LASTBUILD 20200715
 
 RUN mkdir /etc/stubby \
 	&& apt-get clean \
