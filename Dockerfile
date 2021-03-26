@@ -1,6 +1,6 @@
 FROM debian:buster-slim
 LABEL maintainer="Andrew Fried <afried@deteque.com>"
-LABEL build_date="2021-02-16"
+LABEL build_date="2021-03-26
 ENV STUBBY_VERSION 0.2.5
 
 RUN mkdir /etc/stubby \
