@@ -1,7 +1,7 @@
 FROM debian:bullseye-slim
 LABEL maintainer="Andrew Fried <afried@deteque.com>"
-LABEL build_date="2021-12-20"
-ENV STUBBY_VERSION 0.2.5
+LABEL build_date="2022-02-14"
+ENV STUBBY_VERSION="1.6.0-2"
 
 RUN mkdir /etc/stubby \
 	&& apt-get clean \
