@@ -1,6 +1,6 @@
 FROM debian:bullseye-slim
 LABEL maintainer="Andrew Fried <afried@deteque.com>"
-LABEL build_date="2022-02-14"
+LABEL build_date="2022-03-10"
 ENV STUBBY_VERSION="1.6.0-2"
 
 RUN mkdir /etc/stubby \
