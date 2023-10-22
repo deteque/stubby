@@ -1,7 +1,7 @@
 FROM debian:bookworm-slim
 LABEL maintainer="Andrew Fried <afried@deteque.com>"
 ENV STUBBY_VERSION="1.6.0-3+b1"
-LABEL build_date="2023-10-07"
+LABEL build_date="2023-10-22"
 
 RUN mkdir /etc/stubby \
 	&& apt-get clean \
